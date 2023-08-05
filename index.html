@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,108 +13,147 @@
 
 <body>
 <main>
-  <div class="container-fluid">
-
-    <section class="py-5 text-center container">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 mx-auto">
-        <h1 class="fw-light">The Low-Light Agricultural Dataset</h1>
-        <p class="lead text-muted">This web page presents a low-light agricultural dataset from a Macadamia orchard located in McLeans Ridges, NSW 2480, Australia, which was recorded during a day of abundant sunshine. However, the resultant sequence of images exhibited underexposure due to the presence of shading caused by the trees, as depicted in the below carousel. The dataset was collected onboard with a retrofitted TORO Timecutter Zero Turn mower equipped with a ZED stereo camera.</p>
-      </div>
-      </section>
-
-      <section class="py-5">
-        <div class="container">
-          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+<div class="container-fluid">
+<section class="py-5 text-center container">
+<div class="row">
+  <div class="col-lg-12 col-md-12 mx-auto">
+    <h1 class="fw-light">The Low-Light Agricultural Dataset</h1>
+    <p class="lead text-muted">This web page presents a low-light agricultural dataset from a Macadamia orchard located in McLeans Ridges, NSW 2480, Australia, which was recorded during a day of abundant sunshine. However, the resultant sequence of images exhibited underexposure due to the presence of shading caused by the trees, as depicted in the below carousel. The dataset was collected onboard with a retrofitted TORO Timecutter Zero Turn mower equipped with a ZED stereo camera.</p>
+  </div>
+  </section>
+  <section class="py-5">
+    <div class="container">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button> --> 
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active"> <img src="media/right000001.png" class="d-block w-100" alt="Experimental setup">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Sample left camera frame of the dataset.</h5>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active"> <img src="media/right000001.png" class="d-block w-100" alt="Experimental setup">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Sample left camera frame of the dataset.</h5>
-                </div>
-              </div>
-              <div class="carousel-item"> <img src="media/depth000001.png" class="d-block w-100" alt="Left camera frame sample">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Depth map of first frame of the dataset.</h5>
-                </div>
-              </div>
-              <!--
+          </div>
+          <div class="carousel-item"> <img src="media/depth000001.png" class="d-block w-100" alt="Left camera frame sample">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Depth map of first frame of the dataset.</h5>
+            </div>
+          </div>
+          <!--
               <div class="carousel-item"> <img src="media/depth000001.png" class="d-block w-100" alt="Depth map of first frame">
                 <div class="carousel-caption d-none d-md-block">
                   <p>Experimental setup of the recorded dataset.</p>
                 </div>
               </div>
-              -->
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span> </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="visually-hidden">Next</span> </button>
-          </div>
+              --> 
         </div>
-      </section>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span> </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="visually-hidden">Next</span> </button>
+      </div>
+    </div>
+  </section>
+  <section class="py-5" >
+    <div class="container">
+      <h2>Download</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Dataset</th>
+            <th scope="col">Calibration Files</th>
+            <th scope="col">Description</th>
+            <th scope="col">Size</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td><a href="https://unsw-my.sharepoint.com/:u:/g/personal/z3538734_ad_unsw_edu_au/EUJ7cTLW1i9Iujxgm_Y4XjUBKQGn6n4uF009vhJP_HdHyw?e=MyDO8v">Left + Right</a></td>
+            <td><a href="https://unsw-my.sharepoint.com/:u:/g/personal/z3538734_ad_unsw_edu_au/ETE--r5cdtdCjF7KkAe4vvIBaqqHCdmE_lzcx_tz9OWpxw?e=hzkPHT">Calibration File</a></td>
+            <td>Color Left and Right Sequence</td>
+            <td>13.1GB</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td><a href="https://unsw-my.sharepoint.com/:u:/g/personal/z3538734_ad_unsw_edu_au/ETxXDkHECshJjJozAyWrLdoBPoPen5oxlg-1JTTObcgTAw">Left + Depth</a></td>
+            <td><a href="https://unsw-my.sharepoint.com/:u:/g/personal/z3538734_ad_unsw_edu_au/ETE--r5cdtdCjF7KkAe4vvIBaqqHCdmE_lzcx_tz9OWpxw?e=hzkPHT">Calibration File</a></td>
+            <td>Color Left and Depth Sequence</td>
+            <td>7.2GB</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td><a href="https://unsw-my.sharepoint.com/:u:/g/personal/z3538734_ad_unsw_edu_au/Ef7apk1XPVtLo0_JPk0ra0ABoVnjzGYdaqqE_HdH13SlsA?e=gZFBFq">SVO Raw File</a></td>
+            <td><a href="https://unsw-my.sharepoint.com/:u:/g/personal/z3538734_ad_unsw_edu_au/ETE--r5cdtdCjF7KkAe4vvIBaqqHCdmE_lzcx_tz9OWpxw?e=hzkPHT">Calibration File</a></td>
+            <td >SVO Compressed File</td>
+            <td>8.2GB</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
-      <section class="py-5" >
-        <div class="container">
-          <h2>Download</h2>
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Dataset</th>
-                <th scope="col">Calibration Files</th>
-                <th scope="col">Description</th>
-                <th scope="col">Size</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td><a href="https://unsw-my.sharepoint.com/:u:/g/personal/z3538734_ad_unsw_edu_au/EUJ7cTLW1i9Iujxgm_Y4XjUBKQGn6n4uF009vhJP_HdHyw?e=MyDO8v">Left + Right</a></td>
-                <td><a href="https://unsw-my.sharepoint.com/:u:/g/personal/z3538734_ad_unsw_edu_au/ETE--r5cdtdCjF7KkAe4vvIBaqqHCdmE_lzcx_tz9OWpxw?e=hzkPHT">Calibration File</a></td>
-                <td>Color Left and Right Sequence</td>
-                <td>13.1GB</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td><a href="https://unsw-my.sharepoint.com/:u:/g/personal/z3538734_ad_unsw_edu_au/ETxXDkHECshJjJozAyWrLdoBPoPen5oxlg-1JTTObcgTAw">Left + Depth</a></td>
-                <td><a href="https://unsw-my.sharepoint.com/:u:/g/personal/z3538734_ad_unsw_edu_au/ETE--r5cdtdCjF7KkAe4vvIBaqqHCdmE_lzcx_tz9OWpxw?e=hzkPHT">Calibration File</a></td>
-                <td>Color Left and Depth Sequence</td>
-                <td>7.2GB</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td><a href="https://unsw-my.sharepoint.com/:u:/g/personal/z3538734_ad_unsw_edu_au/Ef7apk1XPVtLo0_JPk0ra0ABoVnjzGYdaqqE_HdH13SlsA?e=gZFBFq">SVO Raw File</a></td>
-                <td><a href="https://unsw-my.sharepoint.com/:u:/g/personal/z3538734_ad_unsw_edu_au/ETE--r5cdtdCjF7KkAe4vvIBaqqHCdmE_lzcx_tz9OWpxw?e=hzkPHT">Calibration File</a></td>
-                <td >SVO Compressed File</td>
-                <td>8.2GB</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="py-5" >
-        <div class="container">
-          <h2>License</h2>
-          <p>All data in the dataset is licensed under a Creative Commons 4.0 Attribution License (CC BY 4.0)</p>
-        </div>
-      </section>
-
+  <section class="py-5">
+  <div class="container">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">BibTeX Citation</h5>
+        <pre>
+					@article{Islam2023AGRISLAM,
+					  title={AGRI-SLAM: a real-time stereo visual SLAM for agricultural environment},
+					  author={Rafiqul Islam and Habibullah Habibullah and Tagor Hossain},
+					  journal={Autonomous Robots},
+					  year={2023},
+					  volume={47},
+					  pages={649 - 668},
+					  url={https://doi.org/10.1007/s10514-023-10110-y}
+					}
+				</pre>
+        <button class="btn btn-primary" id="copyButton">Copy to Clipboard</button>
+      </div>
     </div>
   </div>
+  </section>
+	
+	
+  <section class="py-5" >
+    <div class="container">
+      <h2>License</h2>
+      <p>All data in the dataset is licensed under a Creative Commons 4.0 Attribution License (CC BY 4.0)</p>
+    </div>
+  </section>
+	
+</div>
 </main>
-
 <footer class="text-muted py-5">
   <div class="container">
     <p class="float-end mb-1"> <a href="#">Back to Top</a> </p>
   </div>
 </footer>
 
-<!-- Bootstrap core Script -->
-<script src="static/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap core Script --> 
+<script src="static/js/bootstrap.bundle.min.js"></script> 
+<script>
+  // Copy to Clipboard functionality
+  document.getElementById("copyButton").addEventListener("click", function() {
+    var citationText = `@article{Islam2023AGRISLAMAR,
+  title={AGRI-SLAM: a real-time stereo visual SLAM for agricultural environment},
+  author={Rafiqul Islam and Habibullah Habibullah and Tagor Hossain},
+  journal={Autonomous Robots},
+  year={2023},
+  volume={47},
+  pages={649 - 668},
+  url={https://doi.org/10.1007/s10514-023-10110-y}
+}`;
+    var tempInput = document.createElement("textarea");
+    document.body.appendChild(tempInput);
+    tempInput.value = citationText;
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+    alert("BibTeX citation copied to clipboard!");
+  });
+</script>
 
 </body>
 </html>
